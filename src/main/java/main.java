@@ -5,9 +5,9 @@ public class main {
 
     public static void main(String[] args) {
         int jahresZahl = Integer.parseInt(JOptionPane.showInputDialog("Bitte gib eine Jahreszahl ein: "));
-
-        boolean message = (new GregorianCalendar().isLeapYear(jahresZahl));
-
+        
+        // Es sind keine zusätzlichen features nötig das .isLeapYear() dies schon berücksichtigt
+        boolean message = (new GregorianCalendar().isLeapYear(jahresZahl)); 
         if (message == true) {
             System.out.println("Das Jahr " + jahresZahl + " ist ein Schaltjahr!");
         }
